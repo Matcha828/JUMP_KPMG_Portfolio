@@ -1,0 +1,159 @@
+/* Defaults */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+    text-align: center;
+}
+
+#main{
+    margin-top: 56px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+hr:not(.jumboHr) {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.divider {
+    border: 200px solid black;
+    margin: auto;
+    max-width: 80vw;
+}
+
+.jumboHr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+#returnArrow {
+    position: fixed;
+    width:5px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    font-size: 3.5em;
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 2px lightblue;
+}
+
+#returnArrow:hover {
+    text-shadow: 2px 2px 2px black;
+    transform: translateY(-5px);
+}
+
+#returnArrow a {
+    color: black;
+}
+
+#returnArrow a:hover {
+    color: lightblue;
+}
+
+/* Header */
+/*Jumbotron*/
+.jumbotron{
+    padding: 12% 12%;
+    text-align: center;
+    text-shadow: 3px 3px 6px #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:bold;
+    color:white;
+    /* background-image */
+    background-image: url("https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9148d0b56a8044a3c458151337bcc182&auto=format&fit=crop&w=1525&q=80");
+    background-size:cover;
+    background-position: center center;
+}
+
+.jumboCenter{
+    position: relative;
+}
+
+#socialLinks {
+    display: flex;
+    justify-content: center;
+}
+
+#socialLinks a{
+    /* padding: 3px 20px; */
+    padding: 2% 10%;
+    color: white;
+    transition: ease;
+}
+
+#socialLinks a:hover {
+    background:rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    transform: scale(1.1);
+}
+
+/* Portfolio */
+.card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.portfolio .card-body i{
+    font-size: 25px;
+}
+
+.card > * {
+    transition: all 0.2s ease;
+}
+
+.card:not(.about) > *:hover {
+    background-color: lightslategray;
+    border-radius: 5px;
+    transform: scale(1.02);
+}
+
+.techs {
+    align-self: center;
+}
+
+#Portfolio img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* About */
+#About img {
+    padding: 10px;
+    margin: 10px;
+    max-width: 70%;
+}
+
+#tools > * {
+    padding: 10px;
+    margin: 10px;
+    width: 5em;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Contact */
+#Contact {
+    margin-bottom: 56px;
+}
+
